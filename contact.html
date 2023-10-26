@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href = "contact.css" rel ="stylesheet" type ="text/css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class ="container">
+    <h1>Contact me!</h1>
+    <form id="form-id" class="f-form-class" method="post" action="contact-form-process.php">
+            <label for="f_name" class="f-label">First name:</label>
+            <div class="f-input-group">
+                <input type="text" id="f_name" name="f_name" class="f-form-control" required size ="30" >
+            </div>  
+            <label for="l_name" class="f-label">Last name:</label>
+            <div class="f-input-group">
+                <input type="text" id="l_name" name="l_name" class="f-form-control" required size ="30">
+            </div>
+        <div class="form-prompts">
+            <label for="Email" class="f-label">Your email address</label>
+            <div class="f-input-group">
+                <input type="email" id="Email" name="Email" class="f-form-control" required size ="40">
+            </div>
+        <div class="form-prompts">
+            <label for="reason" class="f-label">Reason for contact </label>
+            </div>
+            <div class="input-group">
+                <textarea id="Reason" name="Reason" class="f-form-control" rows="6" maxlength="3000" required cols="50"></textarea>
+            </div>
+        <div class="form-prompts">
+            <label for="Message" class="f-label">Your message</label>
+            <div class="input-group">
+                <textarea id="Message" name="Message" class="f-form-control" rows="6" maxlength="3000" required cols = "50"></textarea>
+            </div>
+        </div>
+        <div class="form-prompts">
+            <button type="submit" id="f-button" class="f-btn f-btn-primary f-btn-lg f-btn-block">Send</button>
+        </div>
+        
+    </form>
+</body>
+</div>
+</html>
+
+
+

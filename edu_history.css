@@ -1,0 +1,13 @@
+body {
+    /* The image used */
+    background-image: url("port.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative; top:0px; left:0px; margin-left:0px; margin-right:0px
+}
+
+.body h2 a{
+color: black;
+}

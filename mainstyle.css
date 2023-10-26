@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+    font-family: Georgia;
+  }
+  .container {
+      width: 100%;
+      border: 1px solid #e5cd47;
+  }
+  header, footer {
+      padding: 15px;
+      color: #a5011a;
+      clear: left;
+      text-align: center;
+  }
+  nav {
+      float: left;
+      max-width: 10px;
+      margin: 0;
+      padding: 5px;
+  }
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+  }
+  
+  nav li a {
+      display: block;
+      color: #f49542;
+      padding: 8px 16px;
+      text-decoration: none;
+  }
+  
+  /*hover action used to change element properties when hovering*/
+  nav li a:hover {
+      background-color: #b25401;
+      color: white;
+  }
+  
+  
+  article {
+      margin-left: 210px;
+      border-left: 1px solid gray;
+      padding: 10px;
+      overflow: hidden;
+  }  
+   h2{
+    text-align: centre;
+    color: #a9a4a4;
+  }

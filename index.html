@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<meta charset="utf8">
+
+<link href ="mainstyle.css" rel ="stylesheet" type ="text/css">
+<link href ="nav_bar.css" rel = "stylesheet" type="text/css">
+<link href ="parallax.css" rel = "stylesheet" type= "text/css">
+<link href = "dropdown.css" rel ="stylesheet" type = "text/css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scrolltoabout.js"></script>
+<header>
+    <div class="navbar">
+        <div class="dropdown">
+            <p style="font-size: 20px;">
+          <a class="dropbtn">My contact details</button></a>
+          </p>
+          <div class="dropdown-content">
+            <a><div><img alt ="" src =" data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBVcGxvYWRlZCB0bzogU1ZHIFJlcG8sIHd3dy5zdmdyZXBvLmNvbSwgR2VuZXJhdG9yOiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4NCjxzdmcgaGVpZ2h0PSI4MDBweCIgd2lkdGg9IjgwMHB4IiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIA0KCSB2aWV3Qm94PSIwIDAgMjAyLjU5MiAyMDIuNTkyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBzdHlsZT0iZmlsbDojMDEwMDAyOyIgZD0iTTE5OC4wNDgsMTYwLjEwNWwtMzEuMjg2LTMxLjI5Yy02LjIzMS02LjIwNi0xNi41NTItNi4wMTYtMjMuMDAxLDAuNDMzbC0xNS43NjEsMTUuNzYxDQoJCQljLTAuOTk1LTAuNTUxLTIuMDI2LTEuMTI0LTMuMTEtMS43MzJjLTkuOTUzLTUuNTE1LTIzLjU3Ny0xMy4wNzQtMzcuOTE0LTI3LjQyMUM3Mi41OTksMTAxLjQ4LDY1LjAzLDg3LjgzNCw1OS41LDc3Ljg3NA0KCQkJYy0wLjU4Ny0xLjA1Ni0xLjE0NS0yLjA3Mi0xLjY5Ni0zLjAzOGwxMC41NzktMTAuNTY1bDUuMi01LjIwN2M2LjQ2LTYuNDYsNi42MzktMTYuNzc4LDAuNDE5LTIzLjAwMUw0Mi43MTUsNC43NjkNCgkJCWMtNi4yMTYtNi4yMTYtMTYuNTQxLTYuMDI3LTIzLjAwMSwwLjQzM2wtOC44MTgsOC44NjhsMC4yNDMsMC4yNGMtMi45NTYsMy43NzItNS40MjksOC4xMjQtNy4yNjUsMTIuODE2DQoJCQljLTEuNjk2LDQuNDY2LTIuNzUyLDguNzI5LTMuMjM1LDEyLjk5OGMtNC4xMywzNC4yNSwxMS41Miw2NS41NSw1My45OTQsMTA4LjAyOGM1OC43MTEsNTguNzA3LDEwNi4wMjcsNTQuMjczLDEwOC4wNjcsNTQuMDU1DQoJCQljNC40NDktMC41Myw4LjcwNy0xLjU5MywxMy4wMzgtMy4yNzVjNC42NTItMS44MTgsOS4wMDEtNC4yODQsMTIuNzY5LTcuMjMzbDAuMTkzLDAuMTY4bDguOTMzLTguNzQ3DQoJCQlDMjA0LjA3OSwxNzYuNjYxLDIwNC4yNjUsMTY2LjM0MywxOTguMDQ4LDE2MC4xMDV6IE0xOTAuNjgzLDE3Ni4xNjRsLTMuOTM3LDMuOTNsLTEuNTY4LDEuNTA3DQoJCQljLTIuNDY5LDIuMzg3LTYuNzQzLDUuNzQtMTIuOTg0LDguMTgxYy0zLjU0MywxLjM2NC03LjAzNiwyLjI0LTEwLjU5LDIuNjYzYy0wLjQ0NywwLjA0My00NC45NSwzLjg0LTEwMC4wMjktNTEuMjM1DQoJCQlDMTQuNzQzLDk0LjM4LDcuMjM4LDY3LjM5NSwxMC4zODQsNDEuMjU5YzAuMzk0LTMuNDY0LDEuMjYzLTYuOTUsMi42NTItMTAuNTkzYzIuNDYyLTYuMjc3LDUuODEyLTEwLjU0Nyw4LjE4MS0xMy4wMmw1LjQ0My01LjQ5Nw0KCQkJYzIuNjIzLTIuNjMsNi43MTQtMi44MzEsOS4xMTItMC40MzNsMzEuMjg2LDMxLjI4NmMyLjM5NCwyLjQwMSwyLjIwNSw2LjQ5Mi0wLjQyMiw5LjEzTDQ1LjUwNyw3My4yNGwxLjk1LDMuMjgyDQoJCQljMS4wODQsMS44MjksMi4yMywzLjg3OSwzLjQ1NCw2LjEwNmM1LjgxMiwxMC40ODIsMTMuNzY0LDI0LjgzLDI5LjEyMSw0MC4xNzNjMTUuMzE3LDE1LjMyNSwyOS42NDQsMjMuMjcsNDAuMDk0LDI5LjA2Nw0KCQkJYzIuMjU4LDEuMjQ5LDQuMzIsMi4zOTgsNi4xNywzLjVsMy4yODksMS45NWwyMS4xMTUtMjEuMTIyYzIuNjM0LTIuNjIzLDYuNzM5LTIuODE3LDkuMTM3LTAuNDI2bDMxLjI3MiwzMS4yNzkNCgkJCUMxOTMuNSwxNjkuNDQ2LDE5My4zMSwxNzMuNTM3LDE5MC42ODMsMTc2LjE2NHoiLz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4="style="width: 12%; height: auto;" > n/a</i></div></a><br>
+            <a><div><img alt ="" src ="  data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBVcGxvYWRlZCB0bzogU1ZHIFJlcG8sIHd3dy5zdmdyZXBvLmNvbSwgR2VuZXJhdG9yOiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4NCjxzdmcgZmlsbD0iIzAwMDAwMCIgaGVpZ2h0PSI4MDBweCIgd2lkdGg9IjgwMHB4IiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIA0KCSB2aWV3Qm94PSIwIDAgNzUuMjk0IDc1LjI5NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBkPSJNNjYuMDk3LDEyLjA4OWgtNTYuOUM0LjEyNiwxMi4wODksMCwxNi4yMTUsMCwyMS4yODZ2MzIuNzIyYzAsNS4wNzEsNC4xMjYsOS4xOTcsOS4xOTcsOS4xOTdoNTYuOQ0KCQljNS4wNzEsMCw5LjE5Ny00LjEyNiw5LjE5Ny05LjE5N1YyMS4yODdDNzUuMjk1LDE2LjIxNSw3MS4xNjksMTIuMDg5LDY2LjA5NywxMi4wODl6IE02MS42MDMsMTguMDg5TDM3LjY0NywzMy41MjNMMTMuNjkxLDE4LjA4OQ0KCQlINjEuNjAzeiBNNjYuMDk3LDU3LjIwNmgtNTYuOUM3LjQzNCw1Ny4yMDYsNiw1NS43NzEsNiw1NC4wMDlWMjEuNDU3bDI5Ljc5NiwxOS4xNmMwLjA0LDAuMDI1LDAuMDgzLDAuMDQyLDAuMTI0LDAuMDY1DQoJCWMwLjA0MywwLjAyNCwwLjA4NywwLjA0NywwLjEzMSwwLjA2OWMwLjIzMSwwLjExOSwwLjQ2OSwwLjIxNSwwLjcxMiwwLjI3OGMwLjAyNSwwLjAwNywwLjA1LDAuMDEsMC4wNzUsMC4wMTYNCgkJYzAuMjY3LDAuMDYzLDAuNTM3LDAuMTAyLDAuODA3LDAuMTAyYzAuMDAxLDAsMC4wMDIsMCwwLjAwMiwwYzAuMDAyLDAsMC4wMDMsMCwwLjAwNCwwYzAuMjcsMCwwLjU0LTAuMDM4LDAuODA3LTAuMTAyDQoJCWMwLjAyNS0wLjAwNiwwLjA1LTAuMDA5LDAuMDc1LTAuMDE2YzAuMjQzLTAuMDYzLDAuNDgtMC4xNTksMC43MTItMC4yNzhjMC4wNDQtMC4wMjIsMC4wODgtMC4wNDUsMC4xMzEtMC4wNjkNCgkJYzAuMDQxLTAuMDIzLDAuMDg0LTAuMDQsMC4xMjQtMC4wNjVsMjkuNzk2LTE5LjE2djMyLjU1MUM2OS4yOTUsNTUuNzcxLDY3Ljg2LDU3LjIwNiw2Ni4wOTcsNTcuMjA2eiIvPg0KPC9nPg0KPC9zdmc+" style="width: 12%; height: auto;">zshafiq1223@gmail.com </div></a><br>
+            <a href="https://www.linkedin.com/in/zain-shafiq-5ab66824b/"><div><img alt ="" src =" data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIGZpbGw9IiMwMDAwMDAiIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMCAzSDRhMSAxIDAgMCAwLTEgMXYxNmExIDEgMCAwIDAgMSAxaDE2YTEgMSAwIDAgMCAxLTFWNGExIDEgMCAwIDAtMS0xek04LjMzOSAxOC4zMzdINS42Njd2LTguNTloMi42NzJ2OC41OXpNNy4wMDMgOC41NzRhMS41NDggMS41NDggMCAxIDEgMC0zLjA5NiAxLjU0OCAxLjU0OCAwIDAgMSAwIDMuMDk2em0xMS4zMzUgOS43NjNoLTIuNjY5VjE0LjE2YzAtLjk5Ni0uMDE4LTIuMjc3LTEuMzg4LTIuMjc3LTEuMzkgMC0xLjYwMSAxLjA4Ni0xLjYwMSAyLjIwN3Y0LjI0OGgtMi42Njd2LTguNTloMi41NnYxLjE3NGguMDM3Yy4zNTUtLjY3NSAxLjIyNy0xLjM4NyAyLjUyNC0xLjM4NyAyLjcwNCAwIDMuMjAzIDEuNzc4IDMuMjAzIDQuMDkydjQuNzF6Ii8+PC9zdmc+"style="width: 12%; height: auto;">linkedin</a><br>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".dropbtn").click(function(){
+        $(".dropdown-content").toggle();
+    });
+    });
+    </script>
+
+          </div>
+        </div>
+<p style="font-size: 20px;">
+    <a href="#about" class="scroll-link">about me</a>
+     </p>
+<p style="font-size: 20px;">
+    <a href="edu_history.html" target = "_blank">My education history</a>
+    </p>
+<p style="font-size: 20px;">
+     <a href="timetable.jpg" target = "_blank">My college timetable </a>
+</p>
+<p style="font-size: 20px;">
+    <a href="contact.html" target = "_blank">Contact me!</a>
+</p>
+</header>
+</div>
+<h2 style = "text-align: center">
+    My name is zain</br>
+    Welcome to my website!
+</h2>
+
+<div class="parallax"></div> 
+<div id ="about" style="height:1000px;background-color: rgba(7, 108, 223, 0.3);font-size:36px">
+  <h3> About me:</h3>
+  <p> Hi, im Zain, nice to meet you! I live in manchester and I am currently a college student studying programming with hopes of going into the tech field, I also enjoy exercising through climbing and boxing, listening to music, as well as programming, I also enjoy gaming , which is how I came to coding. 
+
+  </p>
+</div>
+</body>
+</html>
+
